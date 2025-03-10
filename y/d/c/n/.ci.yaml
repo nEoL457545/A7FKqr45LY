@@ -2201,7 +2201,6 @@ targets:
     presubmit: false
     timeout: 60
     properties:
-      tags: >
         ["devicelab", "android", "linux", "pixel", "7pro"]
       task_name: android_obfuscate_test
 
