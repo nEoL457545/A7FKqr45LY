@@ -25,7 +25,6 @@ def ajax():
     }
     r = requests.post(query_url, data=payload)
     html_data = BeautifulSoup(r.text, "html5lib")
-    table_data = {
         row("td", nowrap="nowrap")[0].text.strip(): [cell.text.strip() for cell in row("td", nowrap="nowrap")][1:]
         for row in html_data.table("tr", nowrap="nowrap")
     }
