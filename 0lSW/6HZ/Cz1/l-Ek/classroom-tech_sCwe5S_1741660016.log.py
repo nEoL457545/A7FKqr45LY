@@ -16,7 +16,6 @@ def index():
 def ajax():
     today = datetime.date.today()
     initial_day = datetime.date(2000, 1, 1)
-    payload = {
         "__EVENTTARGET": "date_cal",
         "__EVENTARGUMENT": (today-initial_day).days,
         "classlist_ddl": request.args.get('building'),
