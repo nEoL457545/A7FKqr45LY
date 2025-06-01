@@ -1,5 +1,4 @@
 languages:
-  Ruby: false
   JavaScript: true
   PHP: false
   Python: false
