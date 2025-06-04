@@ -21,7 +21,6 @@ def ajax():
         "classlist_ddl": request.args.get('building'),
         "__VIEWSTATE": "dDw1NTk0MzU4NjE7dDw7bDxpPDE+Oz47bDx0PDtsPGk8Mz47aTw0Pjs+O2w8dDxAMDw7Ozs7Ozs7Ozs7Pjs7Pjt0PDtsPGk8NT47PjtsPHQ8QDA8cDxwPGw8U0Q7PjtsPGw8U3lzdGVtLkRhdGVUaW1lLCBtc2NvcmxpYiwgVmVyc2lvbj0xLjAuNTAwMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODk8MjAxNy0xMi0wNT47Pjs+Pjs+Ozs7Ozs7Ozs7Oz47Oz47Pj47Pj47Pj47Pu5S1476NkYk5hmd81mL76xisA4B",
         "__VIEWSTATEGENERATOR": "D2C5BC33"
-    }
     r = requests.post(query_url, data=payload)
     html_data = BeautifulSoup(r.text, "html5lib")
         row("td", nowrap="nowrap")[0].text.strip(): [cell.text.strip() for cell in row("td", nowrap="nowrap")][1:]
